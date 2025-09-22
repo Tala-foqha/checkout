@@ -1,4 +1,5 @@
 // Features/checkout/presentation/views/widgets/thank_you_view_body.dart
+import 'package:checkout_app/Features/checkout/presentation/views/widgets/custom_dashed_line.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/thank_you_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -15,24 +16,7 @@ class ThankYouViewBody extends StatelessWidget {
       children: [
         ThankYouCard(),
 
-        Positioned(
-          bottom:  screenSize.height * 0.2+20,
-          left: 20+16+20,
-          right: 20+16+20,
-          child: Row(
-            children: List.generate(30, (index) {
-              return Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 1),
-                  child: Container(
-                    height: 1,
-                    color: const Color(0xffB8B8B8),
-                  ),
-                ),
-              );
-            }),
-          ),
-        ),
+        CustomDashedLine(screenSize: screenSize),
 
         // دائرتان جانبيتان فوق البطاقة (موضوعة بالنسبة لارتفاع الشاشة)
         Positioned(
@@ -52,7 +36,6 @@ class ThankYouViewBody extends StatelessWidget {
           ),
         ),
 
-        // الدائرة المركزية مع أيقونة الصح
         Positioned(
           top: -10,
           left: 0,
