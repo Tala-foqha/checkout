@@ -1,5 +1,6 @@
 // Features/checkout/presentation/views/widgets/thank_you_card.dart
 
+import 'package:checkout_app/Features/checkout/presentation/views/widgets/divider_widget.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/paymentI_tem_Info.dart';
 import 'package:checkout_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
@@ -36,7 +37,9 @@ class ThankYouCard extends StatelessWidget {
         SizedBox(height: 20,),
         PaymentItemInfo(title: 'Time', value: '10:15 AM'),
         SizedBox(height: 20,),
-        PaymentItemInfo(title: 'To', value: 'Sam Louis')
+        PaymentItemInfo(title: 'To', value: 'Sam Louis'),
+        SizedBox(height: 30,),
+        DividerWidget(),
             ],
           ),
         ),
