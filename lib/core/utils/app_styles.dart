@@ -8,4 +8,10 @@ class AppStyles {
     fontWeight: FontWeight.w500,
     color: Colors.black
   );
+  static final TextStyle Regular18=GoogleFonts.inter(
+    fontSize: 18,
+    fontWeight: FontWeight.w400,
+    color: Colors.black
+  );
+
 }
