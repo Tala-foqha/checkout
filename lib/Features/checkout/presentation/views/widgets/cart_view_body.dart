@@ -34,7 +34,7 @@ class CartViewBody extends StatelessWidget {
           SizedBox(height: 16,),
           CustomButton(onTap:() {Navigator.of(context).push(MaterialPageRoute(builder: (context){
             return PaymentDetailsViews();
-          }));}),
+          }));}, text: 'Complete Payment',),
           SizedBox(height: 20,)
         ],
       ),

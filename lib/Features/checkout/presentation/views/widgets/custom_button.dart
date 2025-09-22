@@ -5,8 +5,9 @@ import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
-    super.key, this.onTap,
+    super.key, this.onTap, required this.text,
   });
+  final String text;
 final Function()? onTap;
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,7 @@ final Function()? onTap;
             borderRadius: BorderRadius.circular(15)
           )
         ),
-        child: Center(child: Text('Complete Payment',style: AppStyles.meduim25.copyWith(
+        child: Center(child: Text(text,style: AppStyles.meduim25.copyWith(
           fontSize: 22
         ),)),
       ),
