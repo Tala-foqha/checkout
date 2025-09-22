@@ -1,4 +1,5 @@
 // Features/checkout/presentation/views/widgets/cart_view_appbar.dart
+import 'package:checkout_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -17,6 +18,7 @@ class CartViewAppbar extends StatelessWidget {
             child: Center(
               child: Text(
                 'My Cart',
+                style: AppStyles.meduim25,
                 textAlign: TextAlign.center,
               ),
             ),
