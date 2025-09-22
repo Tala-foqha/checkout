@@ -1,11 +1,11 @@
-// Features/checkout/presentation/views/widgets/cart_view_appbar.dart
+// core/widgets/custom_appbar.dart
 import 'package:checkout_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class CartViewAppbar extends StatelessWidget {
-  const CartViewAppbar({super.key});
-
+class CustomAppbar extends StatelessWidget {
+  const CustomAppbar({super.key, required this.title});
+final String title;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -17,7 +17,7 @@ class CartViewAppbar extends StatelessWidget {
           Expanded(
             child: Center(
               child: Text(
-                'My Cart',
+                title,
                 style: AppStyles.meduim25,
                 textAlign: TextAlign.center,
               ),
