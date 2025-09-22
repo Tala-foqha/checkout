@@ -1,9 +1,12 @@
 // Features/checkout/presentation/views/widgets/thank_you_card.dart
 
+import 'package:checkout_app/Features/checkout/presentation/views/widgets/card_info_widget.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/divider_widget.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/paymentI_tem_Info.dart';
+import 'package:checkout_app/Features/checkout/presentation/views/widgets/total_widget.dart';
 import 'package:checkout_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class ThankYouCard extends StatelessWidget {
   const ThankYouCard({
@@ -25,25 +28,27 @@ class ThankYouCard extends StatelessWidget {
           ),
         ),
         child: Padding(
-          padding: const EdgeInsets.only(right:  22,left: 22,top: 60),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text('Thank you!',style: AppStyles.meduim25,),
-              SizedBox(height: 2,),
-              Text('Your transaction was successful',style: AppStyles.Regular18.copyWith(fontSize: 20),),
-               SizedBox(height: 42,),
-        PaymentItemInfo(title: 'Date', value: '01/24/2023'),
-        SizedBox(height: 20,),
-        PaymentItemInfo(title: 'Time', value: '10:15 AM'),
-        SizedBox(height: 20,),
-        PaymentItemInfo(title: 'To', value: 'Sam Louis'),
-        SizedBox(height: 30,),
-        DividerWidget(),
-            ],
-          ),
-        ),
-      ),
+      padding: const EdgeInsets.only(right:  22,left: 22,top: 60),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text('Thank you!',style: AppStyles.meduim25,),
+          SizedBox(height: 2,),
+          Text('Your transaction was successful',style: AppStyles.Regular18.copyWith(fontSize: 20),),
+           SizedBox(height: 42,),
+    PaymentItemInfo(title: 'Date', value: '01/24/2023'),
+    SizedBox(height: 20,),
+    PaymentItemInfo(title: 'Time', value: '10:15 AM'),
+    SizedBox(height: 20,),
+    PaymentItemInfo(title: 'To', value: 'Sam Louis'),
+    SizedBox(height: 30,),
+    DividerWidget(),
+    SizedBox(height: 24,),
+    TotalWidget(),
+    SizedBox(height: 30,),
+    CardInfoWidget()
+        ]
+      ),))
     );
   }
 }
