@@ -1,4 +1,5 @@
 // Features/checkout/presentation/views/cart_view.dart
+import 'package:checkout_app/Features/checkout/presentation/views/widgets/cart_view_body.dart';
 import 'package:flutter/material.dart';
 
 class CartView extends StatelessWidget {
@@ -6,6 +7,8 @@ class CartView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: SafeArea(child: CartViewBody()),
+    );
   }
 }
