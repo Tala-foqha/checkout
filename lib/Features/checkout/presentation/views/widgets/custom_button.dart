@@ -10,18 +10,23 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 350,
-      height: 73,
-      decoration: ShapeDecoration(
-        color: Color(0xff34A853),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(15)
-        )
+    return GestureDetector(
+      onTap: () {
+        
+      },
+      child: Container(
+        width: 350,
+        height: 73,
+        decoration: ShapeDecoration(
+          color: Color(0xff34A853),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15)
+          )
+        ),
+        child: Center(child: Text('Complete Payment',style: AppStyles.meduim25.copyWith(
+          fontSize: 22
+        ),)),
       ),
-      child: Center(child: Text('Complete Payment',style: AppStyles.meduim25.copyWith(
-        fontSize: 22
-      ),)),
     );
   }
 }
