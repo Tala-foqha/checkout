@@ -13,7 +13,7 @@ final String title,value;
         children: [
           Text(title,style: AppStyles.Regular18,),
           Spacer(),
-          Text(value,style: AppStyles.Regular18,)
+          Text(value,style: AppStyles.Regular18,),
           
         ],
       ),

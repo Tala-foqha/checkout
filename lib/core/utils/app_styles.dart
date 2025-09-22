@@ -13,5 +13,10 @@ class AppStyles {
     fontWeight: FontWeight.w400,
     color: Colors.black
   );
+ static final TextStyle semiBold24=GoogleFonts.inter(
+    fontSize: 24,
+    fontWeight: FontWeight.w600,
+    color: Colors.black
+  );
 
 }

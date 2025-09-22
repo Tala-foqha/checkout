@@ -2,6 +2,7 @@
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/cart_view_appbar.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/divider_widget.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/order_info_item.dart';
+import 'package:checkout_app/Features/checkout/presentation/views/widgets/total_widget.dart';
 import 'package:flutter/material.dart';
 
 class CartViewBody extends StatelessWidget {
@@ -24,7 +25,9 @@ class CartViewBody extends StatelessWidget {
         SizedBox(height: 3,),
         OrderInfoItem(title: 'Shipping', value: '\$8'),
         SizedBox(height: 17,),
-        DividerWidget()
+        DividerWidget(),
+        SizedBox(height: 16,),
+        TotalWidget()
       ],
     );
   }
