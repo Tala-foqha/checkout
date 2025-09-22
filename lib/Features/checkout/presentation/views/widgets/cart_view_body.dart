@@ -2,8 +2,8 @@
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/custom_button.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/divider_widget.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/order_info_item.dart';
+import 'package:checkout_app/Features/checkout/presentation/views/widgets/payment_details.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/total_widget.dart';
-import 'package:checkout_app/core/utils/app_styles.dart';
 import 'package:checkout_app/core/widgets/custom_appbar.dart';
 import 'package:flutter/material.dart';
 
@@ -32,7 +32,9 @@ class CartViewBody extends StatelessWidget {
           SizedBox(height: 16,),
           TotalWidget(),
           SizedBox(height: 16,),
-          CustomButton(),
+          CustomButton(onTap:() {Navigator.of(context).push(MaterialPageRoute(builder: (context){
+            return PaymentDetailsViews();
+          }));}),
           SizedBox(height: 20,)
         ],
       ),

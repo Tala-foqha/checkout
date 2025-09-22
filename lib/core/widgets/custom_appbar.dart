@@ -14,13 +14,11 @@ final String title;
         children: [
           SvgPicture.asset('assets/svg/Arrow 1.svg'),
           const Spacer(),
-          Expanded(
-            child: Center(
-              child: Text(
-                title,
-                style: AppStyles.meduim25,
-                textAlign: TextAlign.center,
-              ),
+          Center(
+            child: Text(
+              title,
+              style: AppStyles.meduim25,
+              textAlign: TextAlign.center,
             ),
           ),
           const Spacer(),
