@@ -1,4 +1,5 @@
 // main.dart
+import 'package:checkout_app/Features/checkout/presentation/views/cart_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +10,9 @@ class CheckoutApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: CartView(),
+    );
   }
 }
