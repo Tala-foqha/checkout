@@ -1,4 +1,5 @@
 // Features/checkout/presentation/views/widgets/thank_you_view_body.dart
+import 'package:checkout_app/Features/checkout/presentation/views/widgets/custom_check_item.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/custom_dashed_line.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/thank_you_card.dart';
 import 'package:flutter/material.dart';
@@ -36,25 +37,7 @@ class ThankYouViewBody extends StatelessWidget {
           ),
         ),
 
-        Positioned(
-          top: -10,
-          left: 0,
-          right: 0,
-          child: CircleAvatar(
-            radius: 50,
-            backgroundColor: const Color(0xffEDEDED),
-            child: CircleAvatar(
-              radius: 40,
-              backgroundColor: const Color(0xff34A853),
-              child: SvgPicture.asset(
-                'assets/svg/check.svg',
-                fit: BoxFit.scaleDown,
-                width: 50,
-                height: 20,
-              ),
-            ),
-          ),
-        ),
+        CustomCheckItem(),
       ],
     );
   }
