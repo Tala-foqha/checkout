@@ -11,9 +11,9 @@ class TotalWidget extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Row(
         children: [
-          Text('Total',style: AppStyles.semiBold24,),
+          Text('Total', style: AppStyles.semiBold24),
           Spacer(),
-          Text('\$50.97',style: AppStyles.semiBold24)
+          Text('\$50.97', style: AppStyles.semiBold24),
         ],
       ),
     );

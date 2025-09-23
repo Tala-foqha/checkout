@@ -3,9 +3,7 @@
 import 'package:flutter/material.dart';
 
 class DividerWidget extends StatelessWidget {
-  const DividerWidget({
-    super.key,
-  });
+  const DividerWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,10 +11,7 @@ class DividerWidget extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: SizedBox(
         width: 320,
-        child: Divider(
-          height: 1,
-          color: Color(0xffC7C7C7),
-        ),
+        child: Divider(height: 1, color: Color(0xffC7C7C7)),
       ),
     );
   }

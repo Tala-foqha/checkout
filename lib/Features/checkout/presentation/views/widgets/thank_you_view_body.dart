@@ -20,18 +20,12 @@ class ThankYouViewBody extends StatelessWidget {
         Positioned(
           left: 10,
           bottom: screenSize.height * 0.2,
-          child: const CircleAvatar(
-            backgroundColor: Colors.white,
-            radius: 20,
-          ),
+          child: const CircleAvatar(backgroundColor: Colors.white, radius: 20),
         ),
         Positioned(
           bottom: screenSize.height * 0.2,
           right: 10,
-          child: const CircleAvatar(
-            backgroundColor: Colors.white,
-            radius: 20,
-          ),
+          child: const CircleAvatar(backgroundColor: Colors.white, radius: 20),
         ),
 
         CustomCheckItem(),

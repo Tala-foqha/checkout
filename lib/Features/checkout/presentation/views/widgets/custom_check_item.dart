@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CustomCheckItem extends StatelessWidget {
-  const CustomCheckItem({
-    super.key,
-  });
+  const CustomCheckItem({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -15,37 +15,43 @@ class CartViewBody extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          CustomAppbar(title: 'My Cart',),
-          SizedBox(height: 18,),
+          CustomAppbar(title: 'My Cart'),
+          SizedBox(height: 18),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 37),
-            child: Expanded(child: Image.asset('assets/image/order_image.png',width: 424,)),
+            child: Expanded(
+              child: Image.asset('assets/image/order_image.png', width: 424),
+            ),
           ),
-          SizedBox(height: 25,),
+          SizedBox(height: 25),
           OrderInfoItem(title: 'Order Subtotal', value: '\$42.97'),
-          SizedBox(height: 3,),
+          SizedBox(height: 3),
           OrderInfoItem(title: 'Discount', value: '\$0'),
-          SizedBox(height: 3,),
+          SizedBox(height: 3),
           OrderInfoItem(title: 'Shipping', value: '\$8'),
-          SizedBox(height: 17,),
+          SizedBox(height: 17),
           DividerWidget(),
-          SizedBox(height: 16,),
+          SizedBox(height: 16),
           TotalWidget(),
-          SizedBox(height: 16,),
-          CustomButton(onTap:() {
-            showModalBottomSheet(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16)
-              ),
-              context: context, builder: (context){
-
-return PaymentMethodsBottomSheet();
-            });
-          //   Navigator.of(context).push(MaterialPageRoute(builder: (context){
-          //   return PaymentDetailsViews();
-          // }));
-          }, text: 'Complete Payment',),
-          SizedBox(height: 20,)
+          SizedBox(height: 16),
+          CustomButton(
+            onTap: () {
+              showModalBottomSheet(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                context: context,
+                builder: (context) {
+                  return PaymentMethodsBottomSheet();
+                },
+              );
+              //   Navigator.of(context).push(MaterialPageRoute(builder: (context){
+              //   return PaymentDetailsViews();
+              // }));
+            },
+            text: 'Complete Payment',
+          ),
+          SizedBox(height: 20),
         ],
       ),
     );

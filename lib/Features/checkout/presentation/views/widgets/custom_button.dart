@@ -4,11 +4,9 @@ import 'package:checkout_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({
-    super.key, this.onTap, required this.text,
-  });
+  const CustomButton({super.key, this.onTap, required this.text});
   final String text;
-final Function()? onTap;
+  final Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -19,12 +17,12 @@ final Function()? onTap;
         decoration: ShapeDecoration(
           color: Color(0xff34A853),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15)
-          )
+            borderRadius: BorderRadius.circular(15),
+          ),
         ),
-        child: Center(child: Text(text,style: AppStyles.meduim25.copyWith(
-          fontSize: 22
-        ),)),
+        child: Center(
+          child: Text(text, style: AppStyles.meduim25.copyWith(fontSize: 22)),
+        ),
       ),
     );
   }

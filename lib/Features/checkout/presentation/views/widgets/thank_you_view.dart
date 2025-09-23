@@ -10,14 +10,20 @@ class ThankYouView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: SvgPicture.asset('assets/svg/Arrow 1.svg',fit: BoxFit.scaleDown,),
+        leading: SvgPicture.asset(
+          'assets/svg/Arrow 1.svg',
+          fit: BoxFit.scaleDown,
+        ),
         elevation: 0,
       ),
-          
+
       backgroundColor: Colors.white,
-      body: SafeArea(child: Transform.translate(
-        offset: Offset(0, -16),
-        child: ThankYouViewBody())),
+      body: SafeArea(
+        child: Transform.translate(
+          offset: Offset(0, -16),
+          child: ThankYouViewBody(),
+        ),
+      ),
     );
   }
 }

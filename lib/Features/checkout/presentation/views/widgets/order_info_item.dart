@@ -4,17 +4,16 @@ import 'package:flutter/material.dart';
 
 class OrderInfoItem extends StatelessWidget {
   const OrderInfoItem({super.key, required this.title, required this.value});
-final String title,value;
+  final String title, value;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Row(
         children: [
-          Text(title,style: AppStyles.Regular18,),
+          Text(title, style: AppStyles.Regular18),
           Spacer(),
-          Text(value,style: AppStyles.Regular18,),
-          
+          Text(value, style: AppStyles.Regular18),
         ],
       ),
     );
