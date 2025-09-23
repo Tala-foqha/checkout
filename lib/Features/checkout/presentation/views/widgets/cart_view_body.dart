@@ -2,9 +2,7 @@
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/custom_button.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/divider_widget.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/order_info_item.dart';
-import 'package:checkout_app/Features/checkout/presentation/views/widgets/payment_details.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/payment_methods_bottom_sheet.dart';
-import 'package:checkout_app/Features/checkout/presentation/views/widgets/payment_methods_list_view.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/total_widget.dart';
 import 'package:checkout_app/core/widgets/custom_appbar.dart';
 import 'package:flutter/material.dart';
