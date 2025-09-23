@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CustomAppbar extends StatelessWidget {
-  const CustomAppbar({super.key, required this.title});
-final String title;
+  const CustomAppbar({super.key,  this.title});
+final String ?title;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,7 +16,7 @@ final String title;
           const Spacer(),
           Center(
             child: Text(
-              title,
+              title??"",
               style: AppStyles.meduim25,
               textAlign: TextAlign.center,
             ),

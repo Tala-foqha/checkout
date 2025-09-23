@@ -8,8 +8,11 @@ class ThankYouView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+          
       backgroundColor: Colors.white,
-      body: SafeArea(child: ThankYouViewBody()),
+      body: SafeArea(child: Transform.translate(
+        offset: Offset(0, -16),
+        child: ThankYouViewBody())),
     );
   }
 }

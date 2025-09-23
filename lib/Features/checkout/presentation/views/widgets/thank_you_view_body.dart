@@ -3,7 +3,6 @@ import 'package:checkout_app/Features/checkout/presentation/views/widgets/custom
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/custom_dashed_line.dart';
 import 'package:checkout_app/Features/checkout/presentation/views/widgets/thank_you_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class ThankYouViewBody extends StatelessWidget {
   const ThankYouViewBody({super.key});
@@ -18,8 +17,6 @@ class ThankYouViewBody extends StatelessWidget {
         ThankYouCard(),
 
         CustomDashedLine(screenSize: screenSize),
-
-        // دائرتان جانبيتان فوق البطاقة (موضوعة بالنسبة لارتفاع الشاشة)
         Positioned(
           left: 10,
           bottom: screenSize.height * 0.2,
